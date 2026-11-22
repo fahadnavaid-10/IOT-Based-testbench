@@ -1,0 +1,31 @@
+Project Development Tools
+
+1. Visual Studio Code
+
+2. Python
+   Version: 3.13
+
+3. Flask Framework
+
+4. PostgreSQL
+   Version: 17
+
+5. pgAdmin 4
+
+6. Arduino IDE
+
+7. Git
+
+8. Node.js
+
+9. npm
+
+10. Vite
+
+11. React
+
+12. Tailwind CSS
+
+13. SQLAlchemy
+
+14. Alembic

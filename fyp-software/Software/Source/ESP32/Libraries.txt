@@ -1,0 +1,15 @@
+DHT
+
+WiFi
+
+HTTPClient
+
+HTTPUpdate
+
+ArduinoJson
+
+Adafruit NeoPixel
+
+LiquidCrystal_I2C
+
+Wire

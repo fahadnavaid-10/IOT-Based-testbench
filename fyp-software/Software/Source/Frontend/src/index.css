@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 7%;
+    --foreground: 210 40% 93%;
+
+    --card: 220 35% 10%;
+    --card-foreground: 210 40% 93%;
+
+    --popover: 220 35% 12%;
+    --popover-foreground: 210 40% 93%;
+
+    --primary: 190 80% 50%;
+    --primary-foreground: 220 40% 7%;
+
+    --secondary: 220 30% 16%;
+    --secondary-foreground: 210 40% 85%;
+
+    --muted: 220 25% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 190 70% 40%;
+    --accent-foreground: 210 40% 95%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 25% 18%;
+    --input: 220 25% 18%;
+    --ring: 190 80% 50%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 220 40% 5%;
+    --sidebar-foreground: 210 30% 75%;
+    --sidebar-primary: 190 80% 50%;
+    --sidebar-primary-foreground: 220 40% 5%;
+    --sidebar-accent: 220 30% 12%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 220 25% 14%;
+    --sidebar-ring: 190 80% 50%;
+
+    /* Status colors */
+    --status-online: 142 72% 45%;
+    --status-offline: 215 15% 45%;
+    --status-deploying: 32 95% 55%;
+    --status-failed: 0 72% 51%;
+    --status-success: 142 72% 45%;
+
+    /* Chart colors */
+    --chart-1: 190 80% 50%;
+    --chart-2: 142 72% 45%;
+    --chart-3: 32 95% 55%;
+    --chart-4: 270 60% 60%;
+    --chart-5: 0 72% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(220 40% 7%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(220 25% 22%);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220 25% 30%);
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(190 80% 50% / 0.15);
+  }
+  .glow-success {
+    box-shadow: 0 0 12px hsl(142 72% 45% / 0.3);
+  }
+  .glow-danger {
+    box-shadow: 0 0 12px hsl(0 72% 51% / 0.3);
+  }
+  .glow-warning {
+    box-shadow: 0 0 12px hsl(32 95% 55% / 0.3);
+  }
+  .gradient-card {
+    background: linear-gradient(145deg, hsl(220 35% 11%), hsl(220 35% 9%));
+  }
+  .gradient-sidebar {
+    background: linear-gradient(180deg, hsl(220 40% 6%), hsl(220 40% 4%));
+  }
+}

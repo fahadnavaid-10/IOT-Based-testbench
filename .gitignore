@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+ENV/
+build/
+develop-eggs/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node / Frontend
+node_modules/
+.npm
+.vite
+Software/Source/Frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large disk images and redundant zip backups (source code is tracked directly)
+*.iso
+FYP-ID08-2025-26/Software.zip
+
+# Nested duplicate extraction folder
+Software/Software/
+fyp-software/Software/Software/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Explicitly keep database files
+!app.db
+!*.sql
